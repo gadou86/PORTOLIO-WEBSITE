@@ -9,17 +9,37 @@ const profilePic = document.getElementById("profile-pic");
 //     document.getElementById("profile-pic").style.borderRadius = "55px";
 //   }
 
-header.addEventListener("scroll", (event) => {
-  header.classList.toggle("red");
-  document.body.style.backgroundColor = "#f05454";
-  document.body.style.transition = "2.5s";
+let lastKnownScrollPosition = 0;
+let ticking = false;
+
+function doSomething(scrollPos) {
+  // Do something with the scroll position
+  profilePic.style.transition = "5.5s";
+  profilePic.style.borderRadius = "50%"
+  
+
+}
+
+
+
+document.addEventListener('scroll', function(e) {
+  lastKnownScrollPosition = window.scrollY;
+
+  if (!ticking) {
+    window.requestAnimationFrame(function() {
+      doSomething(lastKnownScrollPosition);
+      ticking = false;
+    });
+
+    ticking = true;
+  }
 });
 
 profilePic.addEventListener("mouseover", (event) => {
-    profilePic.style.borderRadius = "50%"
-    profilePic.style.boxShadow = "0px 0px 20px rgb(0,0,0.9)"
-    profilePic.style.filter = "grayscale(100%)"
-    profilePic.style.transition = "1.5s";
+  profilePic.style.borderRadius = "50%"
+  profilePic.style.boxShadow = "0px 0px 20px rgb(0,0,0.9)"
+  profilePic.style.filter = "grayscale(100%)"
+  profilePic.style.transition = "1.5s";
 
 });
 profilePic.addEventListener("mouseout", (event) => {
@@ -38,7 +58,7 @@ header.addEventListener("mouseover", (event) => {
 
 header.addEventListener("mouseout", (event) => {
     document.body.style.transition = "2.5s";
-    document.body.style.backgroundColor = "rgb(15, 15, 15";
+    document.body.style.backgroundColor = "rgb(15, 15, 15)";
 
 });
 
@@ -50,7 +70,7 @@ headerTwo.addEventListener("mouseover", (event) => {
 
 headerTwo.addEventListener("mouseout", (event) => {
     document.body.style.transition = "1.5s";
-    document.body.style.backgroundColor = "rgb(15, 15, 15";
+    document.body.style.backgroundColor = "rgb(15, 15, 15)";
 });
 
 var options = {
