@@ -9,6 +9,12 @@ const profilePic = document.getElementById("profile-pic");
 //     document.getElementById("profile-pic").style.borderRadius = "55px";
 //   }
 
+// Skills Bars
+$('.skill-percent').each(function(){
+  $(this).animate({
+    width:$(this).attr('data-percent')},"fast");
+  });
+
 let lastKnownScrollPosition = 0;
 let ticking = false;
 

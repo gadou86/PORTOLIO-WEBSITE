@@ -116,3 +116,112 @@ font-size: 3.2rem;
 
 /* Test things under here */
 
+/* SKILLS */
+
+#skills {
+  background: transparent;
+  padding: 20px 15px 75px 15px;
+  color: #fff;
+}
+
+.skills-text {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto;
+  /* background: #1c3553; */
+  font-size: 20px;
+}
+
+.skills-title {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.skills-title.underline:before {
+  width: 40px;
+}
+
+.skills-list {
+  overflow: hidden;
+  position: relative;
+  z-index: 10
+}
+
+.skill-name:after {
+  background-color: #313131;
+  content: '';
+  display: block;
+  height: 0.3rem;
+  position: relative;
+  top: 3px;
+  /*top: 1rem;*/
+  width: 100%;
+  border-radius: 5px;
+}
+
+.skill-percent {
+  border-radius: 5px;
+
+  font-size: 0;
+  height: 0.3rem;
+  position: relative;
+  top: -.1rem;
+  transition: 3s linear;
+  width: 0;
+}
+
+/* SKILL BAR COLORS */
+
+.skill-percent-html {
+  background-color: #ff7a00;
+}
+.skill-percent-css {
+  background-color: #caf7e3;
+}
+.skill-percent-jquery {
+  background-color: #fed049;
+}
+.skill-percent-scss {
+  background-color: #e84545;
+}
+.skill-percent-javascript {
+  background-color: #e84545;
+}
+.skill-percent-wordpress {
+  background-color: #0e49b5;
+}
+.skill-percent-php {
+  background-color: #0e49b5;
+}
+.skill-percent-git {
+  background-color: #ff7171;
+}
+
+.skill-percent-trello {
+  background-color: #3282b8;
+}
+
+.skill-percent-heroku {
+  background-color: #7868e6;
+}
+
+.skill-percent-sql {
+  background-color: #aed001;
+}
+
+/* Heading Underline */
+
+.underline {
+  display: inline-block;
+  position: relative;
+}
+
+.underline:before {
+  background-color: #fff;
+  bottom: -15px;
+  content: '';
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 110%;
+}
