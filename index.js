@@ -53,9 +53,7 @@ var options = {
   typeSpeed: 40
 };
 
-var typed = new Typed('.element', options);
-
-
+// var typed = new Typed('.element', options);
 
 // Test Below ->
 

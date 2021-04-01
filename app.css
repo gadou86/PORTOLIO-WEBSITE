@@ -73,13 +73,14 @@ p {
 }
 
 #headingGroup span{
-  background: #B8E1FC;
-  background: -webkit-radial-gradient(circle farthest-corner at center center, #B8E1FC 0%, #231421 100%);
-  background: -moz-radial-gradient(circle farthest-corner at center center, #B8E1FC 0%, #231421 100%);
-  background: radial-gradient(circle farthest-corner at center center, #B8E1FC 0%, #231421 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background: #CFE7fA;
+background: -webkit-linear-gradient(to right, #CFE7fA 0%, #6393C1 100%);
+background: -moz-linear-gradient(to right, #CFE7fA 0%, #6393C1 100%);
+background: linear-gradient(to right, #CFE7fA 0%, #6393C1 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
   font-size: 34px;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.432)
 }
 
 #headingGroup h1{
