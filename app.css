@@ -27,7 +27,7 @@ p {
 }
 .content {
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
 .blurb p {
@@ -88,6 +88,8 @@ font-weight: 100;
 font-size: 3.2rem;
 }
 
+
+
 .navbar.scrolled {
     background: #f05454;
     transition: background 500ms;
@@ -99,6 +101,10 @@ font-size: 3.2rem;
   font-size: 24px;
   color: yellow;
 
+}
+
+p .code {
+  color: #f05454;
 }
 
 /* If fade out option is set */
@@ -207,6 +213,11 @@ font-size: 3.2rem;
 
 .skill-percent-sql {
   background-color: #aed001;
+}
+
+.skill-percent-react {
+  background-color: #2196F3;
+  box-shadow: 0 0 10px rgb(130, 193, 204)
 }
 
 /* Heading Underline */
