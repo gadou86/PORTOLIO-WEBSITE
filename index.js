@@ -9,6 +9,11 @@ const profilePic = document.getElementById("profile-pic");
 //     document.getElementById("profile-pic").style.borderRadius = "55px";
 //   }
 
+header.addEventListener("scroll", (event) => {
+  header.classList.toggle("red");
+  document.body.style.backgroundColor = "#f05454";
+  document.body.style.transition = "2.5s";
+});
 
 profilePic.addEventListener("mouseover", (event) => {
     profilePic.style.borderRadius = "50%"
