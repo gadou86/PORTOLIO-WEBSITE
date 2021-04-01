@@ -73,7 +73,13 @@ p {
 }
 
 #headingGroup span{
-    color: #f05454;
+  background: #B8E1FC;
+  background: -webkit-radial-gradient(circle farthest-corner at center center, #B8E1FC 0%, #231421 100%);
+  background: -moz-radial-gradient(circle farthest-corner at center center, #B8E1FC 0%, #231421 100%);
+  background: radial-gradient(circle farthest-corner at center center, #B8E1FC 0%, #231421 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 34px;
 }
 
 #headingGroup h1{
@@ -84,6 +90,19 @@ font-size: 3.2rem;
 .navbar.scrolled {
     background: #f05454;
     transition: background 500ms;
+
+}
+
+
+.typed-cursor {
+  font-size: 24px;
+  color: yellow;
+
+}
+
+/* If fade out option is set */
+.typed-fade-out {
+  color: yellow;
 
 }
 

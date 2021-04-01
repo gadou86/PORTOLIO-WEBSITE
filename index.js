@@ -1,5 +1,6 @@
 // import Darkmode from 'darkmode-js';
- 
+// import Typed from 'typed.js';
+
 const header = document.getElementById("section1");
 const headerTwo = document.getElementById("section2");
 const profilePic = document.getElementById("profile-pic");
@@ -7,6 +8,7 @@ const profilePic = document.getElementById("profile-pic");
 // function myFunction() {
 //     document.getElementById("profile-pic").style.borderRadius = "55px";
 //   }
+
 
 profilePic.addEventListener("mouseover", (event) => {
     profilePic.style.borderRadius = "50%"
@@ -46,7 +48,12 @@ headerTwo.addEventListener("mouseout", (event) => {
     document.body.style.backgroundColor = "rgb(15, 15, 15";
 });
 
+var options = {
+  strings: ['<i>First</i> sentence.', '&amp; a second sentence.'],
+  typeSpeed: 40
+};
 
+var typed = new Typed('.element', options);
 
 
 
